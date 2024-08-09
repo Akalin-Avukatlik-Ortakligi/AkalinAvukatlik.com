@@ -1,0 +1,260 @@
+:root {
+  /* Upon updating colors, update at these locations too:
+    - style-dark.css
+    - index.html => <head> => <meta>.name="theme-color"
+    - assets/scripts/darken-ui-colors.js
+  */
+  --color-lavanta: rgb(121, 97, 119);
+  --color-mavi: rgb(0, 157, 220);
+  --color-turuncu: rgb(242, 100, 48);
+  --color-yesil: rgb(0, 155, 114);
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0px;
+  background-color: #fff;
+  color: #1d1d1f;
+}
+
+ul {
+  background: lightgrey;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+li {
+  margin-left: 20px;
+}
+
+h1, h2 {
+  font-family: "Bodoni 72", "Prata", serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+h3 {
+  font-size: 1.6rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+address {
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  display: contents;
+  font-style: inherit;
+  font-weight: 200;
+}
+address a{
+  margin: 0.1em;
+}
+
+address p{
+  margin: 0.12em;
+}
+address .address-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+address .address-phone-buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 0.4em;
+  background: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  list-style-type: none;
+}
+
+address .address-phone-buttons li {
+  margin-left: 0;
+  padding-inline-start: 0.8em;
+  padding-inline-end: 0.8em;
+}
+
+.call-button{
+  display: flex; /*block can also be used but centering isn't working with that*/
+  justify-content: center;
+  align-items: center;
+
+  -webkit-font-smoothing: antialiased;
+  height: 1.6em;
+  width: 1.6em;
+  /* Padding to extend area touchable */
+  padding: 0.4em;
+}
+
+.call-button img {
+  /* Standart measurements for icons */
+  /* 1.6em x 0.9 */
+  height: 90%;
+  width: 90%;
+}
+
+#whatsapp img{
+  /* Whatsapp icon is made bigger because of
+  its shape and thick white borders.
+  This way whatsapp icon and phone icon
+  seem the same size.*/
+  height: 100%;
+  width: 100%;
+}
+
+#phone img {
+  /* Radius is given to phone icon. */
+  border-radius: 1em;
+}
+
+.screenreader-only {
+  /* Class seen on https://stackoverflow.com/a/39919878 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.container-centered {
+  
+  margin: 0px auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-left-aligned {
+  max-width: 30em;
+  margin: 2em 1em;
+  display: block;
+  /* flex-flow: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.container-left-aligned p{
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.container-left-aligned p span{
+  /* font-family: "Bodoni 72", "Prata", serif; */
+  font-weight: 600;
+}
+
+.container-map-full-width {
+  display: flex;
+  flex-flow: 1;
+  flex-direction: column;
+  flex-shrink: unset;
+}
+
+.container-map-full-width iframe {
+  border:0;
+  width: 100%;
+}
+
+#map {
+}
+
+.nobetci {
+  display: none;
+  position: fixed;
+  /* top: 5px; */
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nobetci.hanging-low{
+  top: unset;
+  margin-top: 5px;
+}
+
+.nobetci.hanging-high{
+  top: 5px;
+}
+
+.nobetci.sticky {
+  top: 5px;
+  margin-top: 0;
+}
+
+.nobetci p{
+  text-align:center;
+  margin: 0.25em;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: bold;
+}
+
+/* Navigation bar */
+nav{
+  display: flex;
+  overflow: hidden;
+  margin-right: 5%;
+  margin-top: 1px;
+  margin-left: 5%;
+}
+
+/* Style the links inside the navigation bar */ 
+nav a { 
+  padding: 0.4em 0em 0em 0em;  
+}
+
+nav a button { 
+  border-style:none;
+  border-radius: 6pt; 
+  padding: 0.4em;
+  margin-right: 0.8em;
+  background-color: #eee;
+  
+  /* TEXT IN BUTTON */
+  color: #1D1D1F; /* Text color */ 
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  text-decoration: none;
+} 
+
+/* Change the color of links on hover */ 
+nav a button:hover {
+  /* Apply all changes here to 'nav a.in-use button' */
+  background-color: #ddd;
+  color: #1D1D1F;
+  text-decoration: underline;
+}
+
+/* class "in-use" if link in navbar clicked/tapped and is open */
+nav a.in-use {
+  pointer-events: none;
+  cursor: default;
+}
+nav a.in-use button {
+  /* Contains same style as button:hover */
+  background-color: #ddd;
+  color: #1D1D1F;
+}
+
+hr{
+  margin-bottom: 0;
+}
