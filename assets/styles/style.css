@@ -8,6 +8,9 @@
   --color-mavi: rgb(0, 157, 220);
   --color-turuncu: rgb(242, 100, 48);
   --color-yesil: rgb(0, 155, 114);
+
+  --font-family-sans: "Helvetica Neue","Helvetica", "Arial", "Segoe UI", Segoe UI Symbol, sans-serif;
+  --font-family-serif: "Baskerville", "Times", "Times New Roman", serif;
 }
 
 html {
@@ -31,7 +34,7 @@ li {
 }
 
 h1, h2 {
-  font-family: "Bodoni 72", "Prata", serif;
+  font-family: var(--font-family-serif);
   font-weight: 400;
 }
 
@@ -52,7 +55,7 @@ h3 {
   margin-bottom: 0.25rem;
 }
 address {
-  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: var(--font-family-sans);
   display: contents;
   font-style: inherit;
   font-weight: 200;
@@ -150,10 +153,10 @@ address .address-phone-buttons li {
   /* justify-content: center; */
 }
 .container-left-aligned p{
-  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: var(--font-family-sans);
 }
 .container-left-aligned p span{
-  /* font-family: "Bodoni 72", "Prata", serif; */
+  /* font-family: var(--font-family-serif); */
   font-weight: 600;
 }
 
@@ -203,7 +206,7 @@ address .address-phone-buttons li {
   margin: 0.25em;
   font-size: 15px;
   line-height: 1.5em;
-  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: var(--font-family-sans);
   font-weight: bold;
 }
 
@@ -230,7 +233,7 @@ nav a button {
   
   /* TEXT IN BUTTON */
   color: #1D1D1F; /* Text color */ 
-  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: var(--font-family-sans);
   font-size: 1em;
   font-weight: 200;
   text-decoration: none;
