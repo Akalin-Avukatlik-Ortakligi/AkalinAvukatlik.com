@@ -4,19 +4,28 @@
 var theme_color = document.querySelector('meta[name="theme-color"]');
 
 // Define colors
-const color_lavanta = "#796177";
-const color_dark_lavanta = "#4C3D4B";
 
+// Logo 1-1
+// const color_aaoblue = "rgb(206, 172, 61)";
+// const color_dark_aaoblue = "rgb(150, 118, 12)";
+
+// Logo 1-2
+// const color_aaoblue = "rgb(36, 64, 101)";
+// const color_dark_aaoblue = "rgb(20, 36, 57)";
+
+// Logo 2-1
+const color_aaoblue = "rgb(36, 64, 101)";
+const color_dark_aaoblue = "rgb(20, 36, 57)";
 
 ///////////////////
 // FUNCTIONS
 // Define basic color changing functions
 function lightenUi(){
-    theme_color.setAttribute('content', color_lavanta);
+    theme_color.setAttribute('content', color_aaoblue);
 }
 
 function darkenUi(){
-    theme_color.setAttribute('content', color_dark_lavanta);
+    theme_color.setAttribute('content', color_dark_aaoblue);
 }
 
 function paintUi() {
