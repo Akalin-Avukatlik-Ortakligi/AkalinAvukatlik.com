@@ -63,6 +63,8 @@
 		<!-- Script files-->
 		<!-- 'defer' stops flashing of DOM elements.
 			 More info: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#defer-->
+		<script type="text/javascript" src="./assets/scripts/font-check.js" ></script>
+		<script type="text/javascript" src="./assets/scripts/decide-logo-rendering.js" defer></script>
 		<script type="text/javascript" src="./assets/scripts/map-dark-light-switch.js" defer></script>
 		<script type="text/javascript" src="./assets/scripts/detect-mobile.js" defer></script>
 		<script type="text/javascript" src="./assets/scripts/nobet-listesi.js" defer></script>
@@ -86,6 +88,14 @@
 		<h1 aria-label="Başlık">Akalın Avukatlık Ortaklığı</h1>
 		<!-- <h2 aria-label="Eczanenin eczacısı">Ecz. Rabia Şahin</h2> -->
 		<address>
+
+		<div id="logo-name-container" aria-label="Şirketin ismi">
+			<!--  Logo as SVG will be embedded here via `decide-logo-rendering.js`-->
+			<h1 class="screenreader-only logo-name-line1">Akalın</h1>
+			<h1 class="screenreader-only logo-name-line2">Avukatlık Ortaklığı</h1>
+		</div>
+
+		<address aria-label="İletişim bilgileri">
 			<div class="address-phone">
 				<p aria-label="Telefon Numarası">+90 (272) 217 60 65</p>
 				<div class="address-phone-buttons">

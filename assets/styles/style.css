@@ -44,6 +44,29 @@ h1 {
   margin-bottom: 0.4rem;
 }
 
+h1.logo-name-line1, h1.logo-name-line2 {
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  transform:scale(0.94,1);
+  -webkit-transform:scale(0.94,1);
+
+  inline-size: max-content; /* Stops word wrapping */
+}
+
+h1.logo-name-line1 {
+  font-size: 4.5rem;
+  letter-spacing: 0.177rem;
+  margin-bottom: 0px;
+  line-height: 3.2rem; /* font-size of line1 - font-size of line2 + 0.2 */
+}
+
+h1.logo-name-line2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.04rem;
+  margin-top: 0px;
+}
+
 h2 {
   font-size: 2rem;
   margin-top: 0.4rem;
@@ -260,4 +283,14 @@ nav a.in-use button {
 
 hr{
   margin-bottom: 0;
+}
+
+#logo-name-svg {
+  fill: #000000;  /* Black */
+
+  /* CSS attributes given directly by Affinity Designer output operation */
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-linejoin: round;
+  stroke-miterlimit: 2;
 }

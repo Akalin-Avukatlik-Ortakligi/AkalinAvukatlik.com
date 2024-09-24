@@ -162,6 +162,12 @@
     text-decoration: underline;
   }
 
+  #logo-name-svg {
+    /* Light theme -> fill: #000000; */
+    /*    fill: #faf6f0;*/
+    fill: #faf6f0;
+}
+
 /* END OF @media (prefers-color-scheme: dark) */
 /* DONT PUT RULES OUT OF THIS SCOPE */
 }
