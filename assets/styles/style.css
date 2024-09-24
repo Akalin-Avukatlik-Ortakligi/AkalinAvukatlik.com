@@ -4,10 +4,7 @@
     - index.html => <head> => <meta>.name="theme-color"
     - assets/scripts/darken-ui-colors.js
   */
-  --color-lavanta: rgb(121, 97, 119);
-  --color-mavi: rgb(0, 157, 220);
-  --color-turuncu: rgb(242, 100, 48);
-  --color-yesil: rgb(0, 155, 114);
+  --color_aaoblue: rgb(36, 64, 101);
 
   --font-family-sans: "Helvetica Neue","Helvetica", "Arial", "Segoe UI", Segoe UI Symbol, sans-serif;
   --font-family-serif: "Baskerville", "Times", "Times New Roman", serif;
