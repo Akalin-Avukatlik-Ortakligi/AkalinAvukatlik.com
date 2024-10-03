@@ -1,0 +1,3 @@
+AAO_Logo_300px.webp --> Logo (Kalite 7 Kayıpsız En Hızlı) [300p].webp
+AAO_Logo_300px@2x.webp --> Logo (Kalite 7 Kayıpsız En Hızlı) [600p].webp
+AAO_Logo_300px@3x.webp --> Logo (Kalite 7 Kayıpsız En Hızlı) [900p].webp
